@@ -21,7 +21,7 @@ const bookTour=async (tourId)=>{
     try{
         const session=await axios({
             method:'GET',
-            url:`http://localhost:3000/api/v1/bookings/checkout-session/${tourId}`
+            url:`https://pacific-thicket-84974.herokuapp.com/api/v1/bookings/checkout-session/${tourId}`
         });
 
         console.log(session);

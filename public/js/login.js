@@ -16,7 +16,7 @@ const loginAlert=async (email,password)=>{
     try{
         const res=await axios({
             method:'POST',
-            url:'http://localhost:3000/api/v1/users/login',
+            url:'https://pacific-thicket-84974.herokuapp.com/api/v1/users/login',
             data:{
                 email,
                 password
@@ -39,7 +39,7 @@ const logoutAlert=async () => {
     try {
       var res = await axios({
         method: 'GET',
-        url: 'http://localhost:3000/api/v1/users/logout'
+        url: 'https://pacific-thicket-84974.herokuapp.com/api/v1/users/logout'
       });
 
       if (res.data.status = 'success') {

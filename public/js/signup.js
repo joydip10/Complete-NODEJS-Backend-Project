@@ -16,7 +16,7 @@ const signupAlert=async (name,email,password,passwordConfirm)=>{
     try{
         const res=await axios({
             method:'POST',
-            url:'http://localhost:3000/api/v1/users/signup',
+            url:'https://pacific-thicket-84974.herokuapp.com/api/v1/users/signup',
             data:{
                 email,
                 password,

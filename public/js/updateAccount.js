@@ -17,7 +17,7 @@ console.log('Update Account is connected!');
 //the updateData can update both password and user
 const updateData = async (data, type) => {
     try {
-        let url = (type === 'password' ? 'http://localhost:3000/api/v1/users/updatePassword' : 'http://localhost:3000/api/v1/users/updateMe');
+        let url = (type === 'password' ? 'https://pacific-thicket-84974.herokuapp.com/api/v1/users/updatePassword' : 'https://pacific-thicket-84974.herokuapp.com/api/v1/users/updateMe');
 
         const res = await axios({
             method: 'PATCH',
